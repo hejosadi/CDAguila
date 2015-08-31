@@ -1,0 +1,153 @@
+.navbarOrange{
+background-color:#F15B0F;
+border-bottom: solid 2px #212121;
+color: #ffffff;
+}
+.navbar span.iconAguila {
+width: 40px;
+height: 40px;
+background: url(../icons/logoCDAguila.svg) no-repeat center center;	
+	
+}
+html, body {
+background-color:#F15B0F!important;	
+}
+.icon-bars{
+	color: #ffffff;
+}
+.blanco{	color: #ffffff!important;
+
+	
+	}
+.aguilaBG {
+	
+background: url(../images/aguilaBG.jpg);
+background-size:cover; background-position:center;
+}
+.top-Menu-Left{
+color: #ffffff;
+	height: 42px;
+	background-color:transparent;
+	  background-image:  url(../icons/back.svg);
+	/*background: #212121;*/
+	border-bottom: solid 2px #212121;
+	 
+}
+.list-block { 	background-color:transparent!important;}
+.list-block  ul {
+	background-color:transparent!important;}
+	/*
+	slider
+	*/
+	.swiper-slide {
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 10px;
+  font-size:16px;
+  font-weight: bold;
+}
+.swiper-container {
+  height: 20vh;
+  margin: 35px 0;
+}
+.sw-tr{
+display: inline-block!important;
+height:85px;
+  vertical-align:top;
+}
+.sw-tr  * {
+	margin: 0!important;
+	padding: 0!important;
+}
+.sw-tr a {
+	color: #F15B0F!important;
+}
+.sw-imgTopSlider {
+	height: 10vh;
+}
+.sw-imgSmall{height: 4vh;}
+
+.field{
+	background-image: -moz-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -o-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -ms-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -webkit-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: radial-gradient(circle at 50% 4%, #39b54a 0%, #006838 100%);
+	height: 120px;
+}
+.field .col-50 {
+	
+	 background:  url(../images/field.svg) no-repeat;
+	 background-size: 100% auto;
+	 background-position: center;
+	 
+	 
+	/* background-size:cover; background-position:center;*/
+}
+.field div{
+	height: 100px!important;
+}
+  .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-content-inner {
+	    height: 20vw;
+		overflow-y: hidden;
+  }
+  .text-shadow{
+	     text-shadow: 2px 4px 10px #212121;
+  }
+  #machRiver table{
+	  border-collapse:collapse; 
+	  width: 100%;
+	  text-align: center;
+	  margin: 0;
+	  padding: 0;
+  }
+   #machRiver table > thead{
+background: #212121;border-color: #212121!important;
+color: #ffffff;
+	  text-align: center;
+  }
+  .sp-table-caption{color: #ffffff;
+	width: 100%;	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  background: #F15B0F;
+	    
+  }
+ 
+  .sw-center{
+     text-align: center;
+  }
+  #machTitle   {
+
+	  font-weight: bold;
+  }
+  .sw-TablaPosicion{
+    	width: 100%;	  margin: 0;
+	  padding: 0; border-collapse:collapse; 
+    border: 0;
+    
+  }
+ 
+  .sw-TablaPosicion thead {
+   border: 0;
+	background-image: -moz-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -o-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -ms-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -webkit-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: linear-gradient(180deg, #f15b0f 0%, #ff9500 100%);
+
+  }
+ .item-title{
+   color:#ffffff!important;
+    
+ }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+ <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal aguilaBG">
+ <div class="navbar top-Menu-Left">
+              <div class="navbar-inner">
+                <div class="center">Menu</div>
+              </div>
+            </div>
+     <div class="list-block">
+        <ul>
+          <li><a href="#" class="close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title">Noticias</div>
+                </div>
+              </div></a></li>
+          <li><a href="tabla.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title">Tabla de posiciones</div>
+                </div>
+              </div></a></li>
+              <li><a href="socialmedia.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title">Aficion</div>
+                </div>
+              </div></a></li>
+      
+        </ul>
+      </div>       
+            
+            
+      <div class="content-block">
+        
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar navbarOrange">
+          <div class="navbar-inner">
+            <div class="center sliding"><span class="iconAguila"></span> <strong>CDA</strong>guila</div>
+            <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars blanco"></i></a></div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <div class="page-content">
+  <div class="swiper-container swiper-1">
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><span class="preloader"></span></div>
+     
+    </div>
+     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+ 
+              <div id="newsRiverSoccer">
+              <div class="card demo-card-header-pic">
+  <div style="background-image:url(images/aguilaBG.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+      <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="mach.html?url=7" class="link">Lee mas</a>
+  </div>      
+       </div> 
+        <div class="card demo-card-header-pic">
+  <div style="background-image:url()" valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+   <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="#" class="link">Lee mas</a>
+  </div>      
+       </div> 
+        <div class="card demo-card-header-pic">
+  <div style="background-image:url()" valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+  <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="#" class="link">Lee mas</a>
+  </div>      
+       </div> 
+     </div>     
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+        </div>
+      </div>
+    </div>
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+          <div class="center sliding">About Me</div>
+          <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+        </div>
+      </div>
+      <div class="pages">
+        <div data-page="about" class="page">
+          <div class="page-content">
+            <div class="content-block">
+              <div class="content-block-inner">
+                <p>Hello, my name is {{name}}. I am {{age}} years old and i am working as {{position}} at {{company}}.</p>
+                <p>I have a lot of interests: {{#if interests}}{{join interests delimeter=", "}}{{/if}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    
+    <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/custom/sliderTop.js"></script>
+    
+    <script type="text/javascript" src="js/custom/main.js">
+    </script>
+    <script type="text/javascript" src="js/custom/newsRiverIndex.js">
+    </script>
+    <script type="text/javascript" src="js/custom/mach.js">
+    </script>
+     <script type="text/javascript" src="js/custom/tablaPosiciones.js">
+       
+    </script>
+     <script type="text/javascript" src="js/custom/socialMedia.js">
+       
+    </script>
+
+    
+  </body>
+</html>
