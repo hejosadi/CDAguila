@@ -23,6 +23,11 @@ myApp.onPageInit('social', function (page) {
  fillSocialMediaRiver();
 	//fillNewsRiver();
 });
+myApp.onPageInit('news', function (page) {
+ //fillSliderTop();
+ 
+	//fillNewsRiver();
+});
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageBeforeAnimation('mach', function (page) {
     // run createContentPage func after link was clicked

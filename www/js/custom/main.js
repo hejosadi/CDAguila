@@ -15,7 +15,7 @@ var strLayoutImgCard = function(arrayOptions){
     "</div>"+
   "</div>"+
   "<div class='card-footer'>"+
-    "<a href='#' class='link'>Lee mas</a>"+
+    "<a href='news.html?id_post="+arrayOptions["id"]+"' class='link'>Lee mas</a>"+
   "</div>"+      
        "</div>"; 
        
