@@ -1,6 +1,6 @@
   var fillTablaPosiciones = function(){
     $.ajax({
-    url: "http://cdaguila.abogadoscorp.com/api/get_page/?page_slug=tabla-de-posiciones",
+    url: strT()+"api/get_page/?page_slug=tabla-de-posiciones",
     type: "GET",
     dataType: "jsonp",
 timeout: 5000,

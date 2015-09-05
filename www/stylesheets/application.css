@@ -9,9 +9,14 @@ height: 40px;
 background: url(../icons/logoCDAguila.svg) no-repeat center center;	
 	
 }
+.card-header{
+ background: url(../icons/greyCDAguilaLogo.svg) no-repeat;
+ /* background-size: 50px 50px;
+   background-position: center;*/
+}/*
 html, body {
 background-color:#F15B0F!important;	
-}
+}*/
 .icon-bars{
 	color: #ffffff;
 }
@@ -21,15 +26,16 @@ background-color:#F15B0F!important;
 	}
 .aguilaBG {
 	
-background: url(../images/aguilaBG.jpg);
+background:#212121 url(../images/aguilaBG.jpg);
 background-size:cover; background-position:center;
 }
 .top-Menu-Left{
 color: #ffffff;
-	height: 42px;
+	height: 44px;
 	background-color:transparent;
-	  background-image:  url(../icons/back.svg);
-	/*background: #212121;*/
+	 background: #F15B0F;
+	/*
+   background-image:  url(../icons/back.svg);*/
 	border-bottom: solid 2px #212121;
 	 
 }
@@ -52,12 +58,22 @@ color: #ffffff;
   font-weight: bold;
 }
 .swiper-container {
-  height: 20vh;
+  height: 22vh;
   margin: 35px 0;
 }
+ @media screen and (orientation:landscape) {
+  .swiper-container {
+  height: 20vw;
+  margin: 35px 0;
+} 
+.sw-imgTopSlider {
+
+  height: 10vw!important;
+}
+ }
 .sw-tr{
 display: inline-block!important;
-height:85px;
+/*height:85px;*/
   vertical-align:top;
 }
 .sw-tr  * {
@@ -68,7 +84,8 @@ height:85px;
 	color: #F15B0F!important;
 }
 .sw-imgTopSlider {
-	height: 10vh;
+
+  height: 10vh;
 }
 .sw-imgSmall{height: 4vh;}
 
@@ -97,10 +114,11 @@ height:85px;
     background-size: cover;
     background-position: center;
   }
-  .card-content-inner {
-	    height: 20vw;
+  .sw-card-inner {
+	    max-height: 20vw;
 		overflow-y: hidden;
   }
+  
   .text-shadow{
 	     text-shadow: 2px 4px 10px #212121;
   }
@@ -125,7 +143,7 @@ color: #ffffff;
   }
  
   .sw-center{
-     text-align: center;
+     text-align: center!important;
   }
   #machTitle   {
 
@@ -147,7 +165,72 @@ color: #ffffff;
 	background-image: linear-gradient(180deg, #f15b0f 0%, #ff9500 100%);
 
   }
- .item-title{
-   color:#ffffff!important;
+ 
+                             i.icon.icon-bars {
+
+                                    max-width: 14px!important;
+                                    max-height:14px!important;
+                                  
+                                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAfUlEQVRIS2NkoDFg/P//fwMDA4M9jew5CLLgP40MBxsLsiCAgYHBgEaWXGCkkcFwY0ctIBjCwyCI/v//L8DAwKBP0K/kKbgIygcXaGjBBVpbAPYBKIhGczLOJDAM8gF5yZt4XbQPImiFQ9OcTPMqE1TpOxAfqiSp3EDzOAAAkJkrSL7UdG4AAAAASUVORK5CYII=')!important;
+                                    }
+   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f15b0f'%2F%3E%3C%2Fsvg%3E")!important;
     
- }
+   
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f15b0f'%2F%3E%3C%2Fsvg%3E")!important;
+   
+}
+.swiper-pagination-bullet-active {
+   
+    background: #f15b0f!important;
+}
+i.icon.icon-back {
+   
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+}
+.statusbar-overlay{
+  background: #f15b0f!important;
+}
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}        
+.fila{
+  display: table-row!important;
+}
+.fila > span{
+  text-align: center!important;
+  display: table-row!important;
+}
+.post-actions{visibility: hidden!important;}
+.masonry a{
+  pointer-events: none;}
+.container-fluid a:hover{cursor: default;}
+.sw-icon-aguila-blanca{
+   width: 29px;
+  height: 29px;
+  background-image: url("../icons/aguilawhite.svg");
+}
+.sw-icon-tabla-blanca{
+   width: 29px;
+  height: 29px;
+  background-image: url("../icons/tableWhite.svg");
+  
+}
+.sw-icon-temporada-blanca{
+   width: 29px;
+  height: 29px;
+  background-image: url("../icons/socialBlanco.svg");
+}
+.sw-icon-social-blanca{
+   width: 29px;
+  height: 29px;
+  background-image: url("../icons/socialBlanco.svg");
+}

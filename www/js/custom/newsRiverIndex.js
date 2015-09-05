@@ -1,9 +1,9 @@
 var fillNewsRiver = function(){
     $.ajax({
-    url: "http://cdaguila.abogadoscorp.com/api/get_recent_posts/",
+    url: strT()+"api/get_recent_posts/",
     type: "GET",
     dataType: "jsonp",
-timeout: 5000,
+timeout: 10000,
     success: function(data){
         console.log(data);
         var strContentNewsRiver="";

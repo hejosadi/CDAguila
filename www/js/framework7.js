@@ -7558,8 +7558,10 @@
         app.reinitPageSwiper = function (pageContainer) {
             pageContainer = $(pageContainer);
             var sliders = pageContainer.find('.swiper-init');
+            
             if (sliders.length === 0) return;
             for (var i = 0; i < sliders.length; i++) {
+                
                 var sliderInstance = sliders[0].swiper;
                 if (sliderInstance) {
                     sliderInstance.update(true);

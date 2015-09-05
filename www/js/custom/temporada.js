@@ -1,28 +1,21 @@
-
-   
-    var fillSliderTop = function(){
-    $.ajax({
-    url: strT()+"api/get_page/?page_slug=partidos",
+var fillTemporada = function(){
+ $.ajax({
+    url: strT()+"api/get_page/?page_slug=temporada",
     type: "GET",
     dataType: "jsonp",
-timeout: 10000,
+timeout: 5000,
     success: function(data){
         console.log(data);
-       
-
-      getSliderContent(data);
-     
+        
+      getTemporada(data);
     },
     error: function(XMLHttpRequest, textStatus, errorThrown){
-     /* swTimer(0, 18);
-	  setInterval(function () {
-	   location.reload();
-	  }, 10000);*/
+    
     }
-       });  
-    }
-var getSliderContent= function(data){
-    $.each(data.page, function(i, field){
+       });  	
+};
+var getTemporada= function(data){
+	 $.each(data.page, function(i, field){
         if(i == "content"){ 
         var mainContent = field;
        mainContent = $('<div></div>').append(mainContent).find('tbody').end().html();
@@ -31,7 +24,7 @@ mainContent = $('<div></div>').append(mainContent).find('img').removeAttr('heigh
 mainContent = $('<div></div>').append(mainContent).find('img').removeAttr('style').end().html();
 mainContent = $('<div></div>').append(mainContent).find('img').attr('class', 'sw-imgTopSlider').end().html();
 
-       $(".swiper-wrapper").html("");
+      
       
        $(mainContent).find("tr").each(function () {
        if($(this).text()==""){}else{  
@@ -51,22 +44,21 @@ var elemImg=[];
               $(this).html($('<div></div>').append($(this).html()).find('a').attr("href","mach.html?url="+strHref).end().html());
         var strTime = $('<div></div>').append($(this).html()).find('time')[0].outerHTML;
         $(this).html($('<div></div>').append($(this).html()).find('time').remove().end().html());
-        $(".swiper-wrapper").append('<div class="swiper-slide"><div class="row no-gutter" >'+
+        $("#ulTemporadaInfinita").append(' <li class="item-content"><div class="item-inner fila"><div class="row no-gutter" >'+
                 '<div class="col-33 sw-center negro"><span class="sw-tr">'+elemImg[0]+'</span></div>'+
-               ' <div class="col-33 sw-center negro"><span class="sw-tr">'+$(this).html()+'</span></div>'+
+               ' <div class="col-33 sw-center negro"><span class="sw-tr fila sw-center">'+$(this).html()+'</span></div>'+
                 '<div class="col-33 sw-center negro"><span class="sw-tr">'+elemImg[1]+'</span></div>'+
-              '</div><div class="col-100 sw-center negro"><span class="sw-tr">'+
-              strTime+'</span></div></div>');
-        
-        
-        /* $(".swiper-wrapper").append("<div class=\"swiper-slide\"><span><span class='sw-tr'>"+elemImg[0]+
-           "</span><span class='sw-tr'>"+$(this).html()+"</span><span class='sw-tr'>"+elemImg[1]+"</span></span></div>");
-       */
+              '</div><div class="row no-gutter" ><div class="col-100 sw-center negro"><span class="sw-tr">'+
+              strTime+'</span></div></div></div></li>');
        }
          
 });
-
-       mySwiper1.update();
         }
       });
+      
+};
+var dncMach= function(){
+  $.get('/mach.html', function(data) {
+   mainView.router.loadContent(data);
+});
 };

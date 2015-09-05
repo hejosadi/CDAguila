@@ -1,20 +1,28 @@
 var fillMachRiver = function(ext){
     var $div = $('<div></div>');
-
-$div.load("http://cdaguila.abogadoscorp.com/"+ext+" article", function(){
+var jsUrl= strT();
+      $div.load(jsUrl+ext+" form", function(){
+       
+         var jsID = $('<div></div>').append($(this).html()).find('#comment_post_ID').val();
+   $("#hfID").val(jsID);
+  
+  $("#aComentaros").attr("href","comentarios.html?ext="+ext);
+}); 
+  
+$div.load(jsUrl+ext+" article", function(){
   machOrderContent($(this).html());
  
 });
-       
-  
+
   }
 var machOrderContent = function(strHTMLContent){  
     var title="";
     var machTeams="";
+   
     title=$('<div></div>').append(strHTMLContent).find('h1.entry-title').html();
     machTeams=$('<div></div>').append(strHTMLContent).find('.sp-event-logos').html();
-  //console.log(machTeams);
-  
+  strHTMLContent = $('<div></div>').append(strHTMLContent).find('.comment-content').remove().end().html();
+  var intComentarios = $('<div></div>').append(strHTMLContent).find('.comment-body').length;
 machTeams = $('<div></div>').append(machTeams).find('img').removeAttr('width').end().html();
 machTeams = $('<div></div>').append(machTeams).find('img').removeAttr('height').end().html();
 machTeams = $('<div></div>').append(machTeams).find('img').removeAttr('style').end().html();
@@ -33,38 +41,74 @@ var i = 0;
  strHTMLContent =  $('<div></div>').append(strHTMLContent).find('.sp-event-logos').remove().end().html();
     
  strHTMLContent =  $('<div></div>').append(strHTMLContent).find('.entry-header').remove().end().html();
+  strHTMLContent =  $('<div></div>').append(strHTMLContent).find('#comments').remove().end().html();
+  strHTMLContent =  $('<div></div>').append(strHTMLContent).find('.comment-body').remove().end().html();
  
    $("#machTitle").html(title);
-   
-   
+  $("#aComentaros").html(intComentarios + " Comentarios");
+ 
+  //document.getElementById('hfID').value
      $( "#machRiver" ).html(strHTMLContent);
      
   }
   
-  var summitComment = function(ext){
-   
-        // get the form data
-        // there are many ways to get this data using jQuery (you can use the class or id also)
-        var formData = {
-            'author'              : "hecto  r",
-            'email'             : "info2@hotmail.com",
-            'comment'    : "sos groso",
-            'comment_post_ID': "108",
-            'comment_parent': "0",
-            'comment_image_108': ext 
-        };
-
-    
-    
-   
-    $.ajax({ // create an AJAX call...
-        data: formData, // get the form data
-        type: "POST", // GET or POST
-        url: "http://cdaguila.abogadoscorp.com/wp-comments-post.php", // the file to call
-        success: function(response) { // on success..
-            console.log(response); // update the DIV
-        }
+ function capturePhoto() {
+    // Take picture using device camera and retrieve image as base64-encoded string
+    navigator.camera.getPicture(uploadPhoto, onFail, { 
+        quality: 20, destinationType: Camera.DestinationType.DATA_URL,targetWidth: 300,
+    		targetHeight: 300 
     });
+}
 
+// A button will call this function
+// To select image from gallery
+function getPhoto(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto, onFail, { quality: 20, allowEdit: true,
+        destinationType: navigator.camera.DestinationType.DATA_URL,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY,targetWidth: 300,
+    		targetHeight: 300
+    });
+}
+
+function uploadPhoto(imageURI) {
+    //If you wish to display image on your page in app
+    // Get image handle
+    var largeImage = document.getElementById('largeImage');
+
+    // Unhide image elements
    
-  };
+
+    // Show the captured photo
+    // The inline CSS rules are used to resize the image
+    $(largeImage).attr("src","data:image/jpeg;base64," + imageURI);
+
+    /*var options = new FileUploadOptions();
+    options.fileKey = "file";
+    var userid = '123456';
+    var imagefilename = userid + Number(new Date()) + ".jpg";
+    options.fileName = imagefilename;
+    options.mimeType = "image/jpg";
+
+    var params = new Object();
+    params.imageURI = imageURI;
+    params.userid = sessionStorage.loginuserid;
+    options.params = params;
+    options.chunkedMode = false;
+    var ft = new FileTransfer();
+    var url = "Your_Web_Service_URL";
+    ft.upload(imageURI, url, win, fail, options, true);*/
+}
+//Success callback
+function win(r) {
+    alert("Image uploaded successfully!!");
+}
+//Failure callback
+function fail(error) {
+    alert("There was an error uploading image");
+}
+// Called if something bad happens.
+// 
+function onFail(message) {
+    //alert('Failed because: ' + message);
+}
