@@ -92,7 +92,7 @@ var arrComentarios=[];
 var getArrayComments = function(data){
   $.each(data.post, function(i, field){
     if(i == "comments"){
-      console.log(field);
+      
      if(field.length > 0){
        $.each(field, function(j, comentario){
          var obj=[];
@@ -105,6 +105,8 @@ var getArrayComments = function(data){
        });
        lastIndex=0;
     llenarRiverComentarios();
+     }else{
+         $("#riverComentarios").html("No hay comentarios en esta publicacion");
      }
     }
   });
