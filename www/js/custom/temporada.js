@@ -45,10 +45,10 @@ var elemImg=[];
         var strTime = $('<div></div>').append($(this).html()).find('time')[0].outerHTML;
         $(this).html($('<div></div>').append($(this).html()).find('time').remove().end().html());
         $("#ulTemporadaInfinita").append(' <li class="item-content"><div class="item-inner fila"><div class="row no-gutter" >'+
-                '<div class="col-33 sw-center negro"><span class="sw-tr">'+elemImg[0]+'</span></div>'+
-               ' <div class="col-33 sw-center negro"><span class="sw-tr fila sw-center">'+$(this).html()+'</span></div>'+
-                '<div class="col-33 sw-center negro"><span class="sw-tr">'+elemImg[1]+'</span></div>'+
-              '</div><div class="row no-gutter" ><div class="col-100 sw-center negro"><span class="sw-tr">'+
+                '<div class="col-33 sw-center "><span class="sw-tr">'+elemImg[0]+'</span></div>'+
+               ' <div class="col-33 sw-center "><span class="sw-tr fila sw-center blanco">'+$(this).html()+'</span></div>'+
+                '<div class="col-33 sw-center "><span class="sw-tr">'+elemImg[1]+'</span></div>'+
+              '</div><div class="row no-gutter" ><div class="col-100 sw-center "><span class="sw-tr blanco">'+
               strTime+'</span></div></div></div></li>');
        }
          

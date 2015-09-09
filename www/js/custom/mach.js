@@ -72,32 +72,9 @@ function getPhoto(source) {
 }
 
 function uploadPhoto(imageURI) {
-    //If you wish to display image on your page in app
-    // Get image handle
     var largeImage = document.getElementById('largeImage');
-
-    // Unhide image elements
-   
-
-    // Show the captured photo
-    // The inline CSS rules are used to resize the image
     $(largeImage).attr("src","data:image/jpeg;base64," + imageURI);
 
-    /*var options = new FileUploadOptions();
-    options.fileKey = "file";
-    var userid = '123456';
-    var imagefilename = userid + Number(new Date()) + ".jpg";
-    options.fileName = imagefilename;
-    options.mimeType = "image/jpg";
-
-    var params = new Object();
-    params.imageURI = imageURI;
-    params.userid = sessionStorage.loginuserid;
-    options.params = params;
-    options.chunkedMode = false;
-    var ft = new FileTransfer();
-    var url = "Your_Web_Service_URL";
-    ft.upload(imageURI, url, win, fail, options, true);*/
 }
 //Success callback
 function win(r) {
