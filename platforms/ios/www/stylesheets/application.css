@@ -1,0 +1,275 @@
+.navbarOrange{
+background-color:#F15B0F;
+border-bottom: solid 2px #212121;
+color: #ffffff;
+}
+.navbar span.iconAguila {
+width: 40px;
+height: 40px;
+background: url(../icons/logoCDAguila.svg) no-repeat center center;	
+	
+}
+.card-header{
+ background: url(../icons/greyCDAguilaLogo.svg) no-repeat;
+ /* background-size: 50px 50px;
+   background-position: center;*/
+}/*
+html, body {
+background-color:#F15B0F!important;	
+}*/
+.icon-bars{
+	color: #ffffff;
+}
+.blanco{	color: #ffffff!important;
+
+	
+	}
+  .blanco time{	color: #ffffff!important;
+
+	
+	}
+.aguilaBG {
+	
+background:#212121 url(../images/aguilaBG.jpg);
+background-size:cover; background-position:center;
+}
+.top-Menu-Left{
+color: #ffffff;
+	height: 44px;
+	background-color:transparent;
+	 background: #F15B0F;
+	/*
+   background-image:  url(../icons/back.svg);*/
+	border-bottom: solid 2px #212121;
+	 
+}
+.list-block { 	background-color:transparent!important;}
+.list-block  ul {
+	background-color:transparent!important;}
+	/*
+	slider
+	*/
+	.swiper-slide {
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 10px;
+  font-size:16px;
+  font-weight: bold;
+}
+.swiper-container {
+  height: 22vh;
+  margin: 35px 0;
+}
+ @media all and (orientation:landscape) {
+  .swiper-container {
+  height: 20vw;
+  margin: 35px 0;
+} 
+.sw-imgTopSlider {
+
+  height: 10vw!important;
+}
+
+
+ }
+.sw-tr{
+display: inline-block!important;
+/*height:85px;*/
+  vertical-align:top;
+}
+.sw-tr  * {
+	margin: 0!important;
+	padding: 0!important;
+}
+.sw-tr a {
+	color: #F15B0F!important;
+}
+.sw-imgTopSlider {
+
+  height: 10vh;
+}
+.sw-imgSmall{height: 4vh;}
+
+.field{
+	background-image: -moz-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -o-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -ms-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: -webkit-radial-gradient(50% 4%, #39b54a 0%, #006838 100%);
+	background-image: radial-gradient(circle at 50% 4%, #39b54a 0%, #006838 100%);
+	height: 120px;
+}
+.field .col-50 {
+	
+	 background:  url(../images/field.svg) no-repeat;
+	 background-size: 100% auto;
+	 background-position: center;
+	 
+	 
+	/* background-size:cover; background-position:center;*/
+}
+.field div{
+	height: 100px!important;
+}
+  .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+  }
+  .sw-card-inner {
+	    max-height: 20vw;
+		overflow-y: hidden;padding: 15px;
+  position: relative;
+  }
+  
+  .text-shadow{
+	     text-shadow: 2px 4px 10px #212121;
+  }
+  #machRiver table{
+	  border-collapse:collapse; 
+	  width: 100%;
+	  text-align: center;
+	  margin: 0;
+	  padding: 0;
+  }
+   #machRiver table > thead{
+background: #212121;border-color: #212121!important;
+color: #ffffff;
+	  text-align: center;
+  }
+  .sp-table-caption{color: #ffffff;
+	width: 100%;	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  background: #F15B0F;
+	    
+  }
+ 
+  .sw-center{
+     text-align: center!important;
+  }
+  #machTitle   {
+
+	  font-weight: bold;
+  }
+  .sw-TablaPosicion{
+    	width: 100%;	  margin: 0;
+	  padding: 0; border-collapse:collapse; 
+    border: 0;
+    
+  }
+ 
+  .sw-TablaPosicion thead {
+   border: 0;
+	background-image: -moz-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -o-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -ms-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: -webkit-linear-gradient(-90deg, #f15b0f 0%, #ff9500 100%);
+	background-image: linear-gradient(180deg, #f15b0f 0%, #ff9500 100%);
+
+  }
+ 
+                             i.icon.icon-bars {
+
+                                    max-width: 14px!important;
+                                    max-height:14px!important;
+                                  
+                                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAfUlEQVRIS2NkoDFg/P//fwMDA4M9jew5CLLgP40MBxsLsiCAgYHBgEaWXGCkkcFwY0ctIBjCwyCI/v//L8DAwKBP0K/kKbgIygcXaGjBBVpbAPYBKIhGczLOJDAM8gF5yZt4XbQPImiFQ9OcTPMqE1TpOxAfqiSp3EDzOAAAkJkrSL7UdG4AAAAASUVORK5CYII=')!important;
+                                    }
+   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f15b0f'%2F%3E%3C%2Fsvg%3E")!important;
+    
+   
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f15b0f'%2F%3E%3C%2Fsvg%3E")!important;
+   
+}
+.swiper-pagination-bullet-active {
+   
+    background: #f15b0f!important;
+}
+i.icon.icon-back {
+   
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+}
+.statusbar-overlay{
+  background: #f15b0f!important;
+}
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}        
+.fila{
+  display: table-row!important;
+}
+.fila > span{
+  text-align: center!important;
+  display: table-row!important;
+}
+.post-actions{visibility: hidden!important;}
+.masonry a{
+  pointer-events: none;}
+.container-fluid a:hover{cursor: default;}
+.sw-icon-aguila-blanca{
+   width: 25px;
+  height: 25px;
+  background-image: url("../icons/aguilawhite.svg");
+}
+.sw-icon-tabla-blanca{
+ width: 25px;
+  height: 25px;
+  background-image: url("../icons/tableWhite.svg");
+  
+}
+.sw-icon-temporada-blanca{
+ width: 25px;
+  height: 25px;
+  background-image: url("../icons/machwhite.svg");
+}
+
+.sw-icon-historia-blanca{
+   width: 25px;
+  height: 25px;
+  background-image: url("../icons/historiawhite.svg");
+}
+.sw-icon-social-blanca{
+ width: 25px;
+  height: 25px;
+  background-image: url("../icons/socialBlanco.svg");
+}
+.sw-naranja{
+  background: #F15B0F;
+  color:#FFFFFF;
+  border:0;
+
+}
+.sw-naranja:hover{
+  
+  background: #F98043;
+}
+.page-content{
+   background: #000000!important;
+}
+.content-block{
+  color:#FFFFFF;
+}
+.sw-row {
+  margin-top: 15px;
+}   
+.sw-Img-top{
+  margin-top: -36px!important;
+background:#212121 url(../images/cdaguilaTop.jpg);
+background-size:cover; background-position:top;
+height: 30vh!important;
+border-color: #212121!important;
+}       

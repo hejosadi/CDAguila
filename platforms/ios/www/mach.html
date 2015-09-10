@@ -1,0 +1,91 @@
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link blanco"><i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding"></div>
+    <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+<div class="pages navbar-through">
+  <div data-page="mach" class="page">
+    <div class="page-content">
+       <div class="content-block">
+        <div class="content-block-inner field">
+              <div class="row " >
+                <div class="col-25 sw-center negro"><span class="machTeam"></span></div>
+                <div class="col-50 sw-center negro"><span id="machTitle"></span></div>
+                <div class="col-25 sw-center negro"><span class="machTeam"></span></div>
+              </div>
+              
+        </div>
+        
+        </div>
+        <div class="content-block sw-center" id="machRiver">
+          <span class="preloader"></span>
+        </div>
+         <div class="content-block">
+            <p><a id="aComentaros" href="#" class="button button-fill color-orange">Comentarios</a></p>
+   </div>
+       <!-- form -->
+       
+<div class="list-block" id="formMach">
+   
+  <ul>
+    <!-- Text inputs -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon icon-form-name"></i></div>
+        <div class="item-inner">
+          <div class="item-title label">Nombre</div>
+          <div class="item-input">
+            <input type="text" placeholder="Tu Nombre y apellido" id="txtNombre">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon icon-form-email"></i></div>
+        <div class="item-inner">
+          <div class="item-title label">Correo</div>
+          <div class="item-input">
+            <input type="email" placeholder="Correo" id="emlCorreo">
+          </div>
+        </div>
+      </div>
+    </li>
+   
+    <!-- Textarea -->
+    <li class="align-top">
+      <div class="item-content">
+        <div class="item-media"><i class="icon icon-form-comment"></i></div>
+        <div class="item-inner">
+          <div class="item-title label">Comentario</div>
+          <div class="item-input">
+            <textarea id="txtComentario"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <input type="hidden" name="hfID" id="hfID" value="">
+</div> 
+<div class="content-block">
+  
+    <img src="" class="lazy" width="100%" id="largeImage" />
+   
+</div>
+ <div class="content-block">
+   
+       <p class="buttons-row theme-orange">
+    <a href="javascript:capturePhoto();" class="button ">Toma Foto</a>
+    <a href="javascript:getPhoto();" class="button ">Album</a>
+</p>
+          <p><a href="javascript:summitComment(document.getElementById('hfID'),document.getElementById('txtNombre'),document.getElementById('emlCorreo'),document.getElementById('txtComentario'),document.getElementById('largeImage'),document.getElementById('formMach'));" class="button button-fill color-orange">comentar</a></p>
+        
+        </div>
+     
+      </div>
+    </div>
+  </div>
+

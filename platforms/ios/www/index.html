@@ -1,46 +1,228 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- Social -->
+        <link href="css/example.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome for social network icons -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    
+  </head>
+ <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal aguilaBG">
+ <div class="navbar top-Menu-Left">
+              <div class="navbar-inner">
+                <div class="center">Menu</div>
+              </div>
             </div>
+     <div class="list-block">
+        <ul>
+          <li><a href="javascript:mainView.router.back();" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon sw-icon-aguila-blanca"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title blanco">Noticias</div>
+                </div>
+              </div></a></li>
+          <li><a href="tabla.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon sw-icon-tabla-blanca"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title blanco">Tabla de posiciones</div>
+                </div>
+              </div></a></li>
+              <li><a href="temporada.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon sw-icon-temporada-blanca"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title blanco">Temporada</div>
+                </div>
+              </div></a></li>
+                            <li><a href="historia.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon sw-icon-historia-blanca"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title blanco">Historia</div>
+                </div>
+              </div></a></li>
+              <li><a href="socialmedia.html" class="item-link close-panel"> 
+              <div class="item-content">
+                <div class="item-media"><i class="icon sw-icon-social-blanca"></i></div>
+                <div class="item-inner"> 
+                  <div class="item-title blanco">Aficion</div>
+                </div>
+              </div></a></li>
+             
+        </ul>
+      </div>       
+            
+  
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar navbarOrange">
+          <div class="navbar-inner">
+            <div class="center sliding"><span class="iconAguila"></span> <strong>CDA</strong>guila</div>
+            <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars blanco"></i></a></div>
+          </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <div class="page-content">
+               <div class="content-block">
+      <div class="content-block-inner sw-Img-top">
+       <br>
+       <p id="pTest" class="blanco" ></p>
+         </div>
+    </div>
+                 <div class="content-block">
+              <div class="row sw-row">
+  <div class="col-50">
+    <a href="temporada.html" class="button button-big sw-naranja">
+      <i class="icon sw-icon-temporada-blanca"></i> Temporada</a>
+  </div>
+   <div class="col-50">
+    <a href="tabla.html" class="button button-big sw-naranja">
+ <i class="icon sw-icon-tabla-blanca"></i>
+      
+      Tabla de posiciones</a>
+  </div>
+</div>
+
+  <div class="row sw-row">
+  <div class="col-50">
+    <a href="historia.html" class="button button-big sw-naranja">
+      <i class="icon sw-icon-historia-blanca"></i> Historia</a>
+  </div>
+   <div class="col-50">
+    <a href="socialmedia.html" class="button button-big sw-naranja">
+ <i class="icon sw-icon-social-blanca"></i>
+      
+      Aficion</a>
+  </div>
+</div>      
+</div>       
+
+  <div class="swiper-container swiper-1">
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><span class="preloader"></span></div>
+     
+    </div>
+     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next" ></div>
+  </div>
+ 
+              <div id="newsRiverSoccer">
+              <div class="card demo-card-header-pic">
+  <div  valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+      <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="#" class="link">Lee mas</a>
+  </div>      
+       </div> 
+        <div class="card demo-card-header-pic">
+  <div valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+   <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="#" class="link">Lee mas</a>
+  </div>      
+       </div> 
+        <div class="card demo-card-header-pic">
+  <div valign="bottom" class="card-header color-white no-border"></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p class="color-gray"></p>
+  <span class="preloader"></span>
+    </div>
+  </div>
+  <div class="card-footer">
+ 
+    <a href="#" class="link">Lee mas</a>
+  </div>      
+       </div> 
+     </div>     
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+      
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            
+        
         </script>
-    </body>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script src="bower_components/codebird-js/codebird.js"></script>
+    <!-- doT.js for rendering templates -->
+    <script src="bower_components/doT/doT.min.js"></script>
+    <!-- Moment.js for showing "time ago" -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment/moment-timezone.js"></script>
+    <script>
+       
+          
+    </script>
+        <!-- Social-feed js -->
+    <script src="js/jquery.socialfeed.js"></script>
+   <script type="text/javascript" src="js/my-app.js"></script>
+   <script type="text/javascript" src="js/custom/main.js"></script>
+   <script type="text/javascript" src="js/custom/sliderTop.js"></script>
+    <script type="text/javascript" src="js/custom/newsRiverIndex.js"></script>
+    <script type="text/javascript" src="js/custom/mach.js"></script>
+     <script type="text/javascript" src="js/custom/tablaPosiciones.js"></script>
+     <script type="text/javascript" src="js/custom/socialMedia.js"></script>
+     <script type="text/javascript" src="js/custom/news.js"></script>
+     <script type="text/javascript" src="js/custom/historia.js"></script>
+    <script type="text/javascript" src="js/custom/temporada.js"></script>
+    <script type="text/javascript" src="js/custom/comentarios.js"></script>
+ 
+  </body>
 </html>

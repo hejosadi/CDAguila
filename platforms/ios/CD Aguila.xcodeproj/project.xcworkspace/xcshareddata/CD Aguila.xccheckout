@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A42E3EB-B4E5-4B63-BB25-3AD1112A1B67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CD Aguila</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>29839E04663850E74DEB3E23D86D647E6CD03C4B</key>
+		<string>https://github.com/hejosadi/CDAguila.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/CD Aguila.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>29839E04663850E74DEB3E23D86D647E6CD03C4B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hejosadi/CDAguila.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>29839E04663850E74DEB3E23D86D647E6CD03C4B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>29839E04663850E74DEB3E23D86D647E6CD03C4B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CDAguila</string>
+		</dict>
+	</array>
+</dict>
+</plist>
