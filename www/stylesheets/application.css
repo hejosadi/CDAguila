@@ -253,7 +253,7 @@ i.icon.icon-back {
   border:0;
 
 }
-.sw-naranja:hover{
+.sw-naranja:active{
   
   background: #F98043;
 }
@@ -272,4 +272,19 @@ background:#212121 url(../images/cdaguilaTop.jpg);
 background-size:cover; background-position:top;
 height: 30vh!important;
 border-color: #212121!important;
-}       
+}  
+.popover-links{
+  background: #f15b0f!important;
+ 
+}
+.popover-links a{
+  
+  color: #FFFFFF!important;
+}  
+.popover-links a:active{
+ 
+  background: #F98043!important;
+}     
+.popover-links div.popover-angle:after{
+  background: #f15b0f!important; 
+}

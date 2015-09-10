@@ -47,6 +47,13 @@ mySwiper1 = myApp.swiper('.swiper-1', {
 myApp.onPageInit('historia', function (page) {
  fillHistoriaCDAguila();
 });
+myApp.onPageInit('juntadirectiva', function (page) {
+ fillJuntaCDAguila();
+});
+myApp.onPageInit('estadio', function (page) {
+ fillEstadioCDAguila();
+});
+
 myApp.onPageInit('temporada', function (page) {
 fillTemporada();
 });
@@ -66,5 +73,8 @@ var mySwiper1 = myApp.swiper('.swiper-1', {
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev',
 });
-
+$$('.open-links').on('click', function () {
+    var clickedLink = this;
+    myApp.popover('.popover-links', clickedLink);
+});  
 
